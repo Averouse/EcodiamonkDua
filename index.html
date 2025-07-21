@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecodiamonk - Formulasi Herbal Teruji oleh Badruddin Sudaryono</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/ecodiamonk-product.png.png" type="image/x-icon">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-link.active {
+            font-weight: 700;
+            color: #ea580c; /* text-orange-600 */
+        }
+        .navbar-scrolled .nav-link.active {
+             color: #ea580c; /* text-orange-600 */
+        }
+        .navbar-top .nav-link.active {
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 navbar-top">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-white" id="logo">ECODIAMONK</a>
+            <nav class="hidden lg:flex space-x-6 text-sm">
+                <a href="#features" data-section="features" class="nav-link text-white hover:text-orange-300 transition-all duration-200">Keunggulan</a>
+                <a href="#about" data-section="about" class="nav-link text-white hover:text-orange-300 transition-all duration-200">Profil Produk</a>
+                <a href="#benefits" data-section="benefits" class="nav-link text-white hover:text-orange-300 transition-all duration-200">Komposisi</a>
+                <a href="#testimonials" data-section="testimonials" class="nav-link text-white hover:text-orange-300 transition-all duration-200">Testimoni</a>
+                <a href="#how-to-use" data-section="how-to-use" class="nav-link text-white hover:text-orange-300 transition-all duration-200">Cara Pakai</a>
+                <a href="#order" data-section="order" class="nav-link text-white hover:text-orange-300 transition-all duration-200">Pemesanan</a>
+            </nav>
+            <a href="https://wa.me/6285290325852?text=Halo,%20Bapak%20Badruddin.%20Saya%20tertarik%20dengan%20produk%20Ecodiamonk." target="_blank" class="hidden lg:inline-block bg-white text-orange-600 font-bold py-2 px-4 rounded-full text-sm hover:bg-gray-200 transition-all duration-300">
+                Hubungi via WhatsApp
+            </a>
+            <button id="mobile-menu-button" class="lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-sm">
+             <a href="#features" class="nav-link-mobile block py-2 px-6 text-gray-700 hover:bg-gray-200">Keunggulan</a>
+             <a href="#about" class="nav-link-mobile block py-2 px-6 text-gray-700 hover:bg-gray-200">Profil Produk</a>
+             <a href="#benefits" class="nav-link-mobile block py-2 px-6 text-gray-700 hover:bg-gray-200">Komposisi</a>
+             <a href="#testimonials" class="nav-link-mobile block py-2 px-6 text-gray-700 hover:bg-gray-200">Testimoni</a>
+             <a href="#how-to-use" class="nav-link-mobile block py-2 px-6 text-gray-700 hover:bg-gray-200">Cara Pakai</a>
+             <a href="#order" class="nav-link-mobile block py-2 px-6 text-gray-700 hover:bg-gray-200">Pemesanan</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-600 to-teal-500 text-white relative overflow-hidden">
+            <div class="absolute top-[-50px] left-[-50px] w-64 h-64 bg-white/10 rounded-full filter blur-xl"></div>
+            <div class="absolute bottom-[-100px] right-[-100px] w-96 h-96 bg-white/10 rounded-full filter blur-xl"></div>
+            
+            <div class="text-center z-10 px-4">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">Kesehatan Optimal Berawal dari <br>Solusi Alam yang Teruji</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto opacity-90">Memperkenalkan Ecodiamonk: Formulasi herbal konsentrat dari Daun Kelor, Sirsak, dan Lo Han Kuo untuk memelihara daya tahan tubuh secara efektif.</p>
+                <a href="https://wa.me/6285290325852?text=Halo,%20Bapak%20Badruddin.%20Saya%20ingin%20bertanya%20lebih%20lanjut%20mengenai%20Ecodiamonk." target="_blank" class="mt-8 inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/30 text-lg">
+                    Dapatkan Informasi & Produk
+                </a>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Fakta dan Keunggulan Ecodiamonk</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-16">Poin-poin fundamental yang menjadikan Ecodiamonk sebagai suplemen herbal yang kredibel dan dapat diandalkan.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="fade-in-section flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full text-orange-600 mb-5">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.707 4.293l.536.536M16.293 4.293l-.536.536M12 21v-4M4.293 16.293l.536-.536M19.707 16.293l-.536-.536"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Komposisi Alami</h3>
+                        <p class="text-gray-600 text-sm">Diformulasikan dari 100% ekstrak herbal murni tanpa campuran kimia.</p>
+                    </div>
+                    <div class="fade-in-section flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full text-orange-600 mb-5">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Manfaat Multiguna</h3>
+                        <p class="text-gray-600 text-sm">Membantu memelihara daya tahan tubuh dan mendukung proses penyembuhan.</p>
+                    </div>
+                    <div class="fade-in-section flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full text-orange-600 mb-5">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944A12.02 12.02 0 0012 21a12.02 12.02 0 009-8.056h.002z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Legalitas Terjamin</h3>
+                        <p class="text-gray-600 text-sm">Memiliki izin edar resmi dari BPOM dan sertifikasi Halal MUI.</p>
+                    </div>
+                    <div class="fade-in-section flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full text-orange-600 mb-5">
+                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Konsumsi Praktis</h3>
+                        <p class="text-gray-600 text-sm">Metode konsumsi modern dengan cara diteteskan ke dalam air minum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center fade-in-section">
+                <div>
+                    <img src="img/ecodiamonk-product.png.png" alt="Produk Ecodiamonk" class="rounded-lg shadow-xl mx-auto">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Profil Produk Ecodiamonk</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Ecodiamonk adalah jamu herbal dalam bentuk sediaan tetes yang diproduksi sesuai standar oleh <strong>PT. BAYU INSAN GEMILANG PROFITINDO</strong>. Produk ini dirancang sebagai suplemen untuk memelihara kesehatan.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Tujuan utama formulasi produk ini adalah untuk menyediakan alternatif pemeliharaan kesehatan yang berasal dari sumber-sumber alami yang telah terbukti secara empiris dan aman untuk dikonsumsi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24 bg-slate-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-16">Analisis Komposisi Herbal Unggulan</h2>
+                <div class="grid md:grid-cols-3 gap-10 fade-in-section">
+                    <div class="text-center p-4">
+                        <h3 class="font-bold text-2xl text-orange-400 mb-2">Daun Kelor</h3>
+                        <p class="opacity-90">Kaya akan senyawa antioksidan, beragam nutrisi, dan terbukti secara empiris membantu menjaga kestabilan gula darah dan tekanan darah.</p>
+                    </div>
+                    <div class="text-center p-4 border-t-2 md:border-t-0 md:border-x-2 border-white/10 mt-8 pt-8 md:mt-0 md:pt-4">
+                        <h3 class="font-bold text-2xl text-orange-400 mb-2">Daun Sirsak</h3>
+                        <p class="opacity-90">Memiliki properti sebagai antivirus dan antibakteri. Senyawa aktif di dalamnya juga efektif membantu menurunkan kadar kolesterol darah.</p>
+                    </div>
+                    <div class="text-center p-4 border-t-2 md:border-t-0 mt-8 pt-8 md:mt-0 md:pt-4">
+                        <h3 class="font-bold text-2xl text-orange-400 mb-2">Buah Lo Han Kuo</h3>
+                         <p class="opacity-90">Berfungsi sebagai pemanis alami non-kalori yang aman bagi penderita diabetes, sekaligus memiliki khasiat sebagai antioksidan kuat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6 fade-in-section">
+                <h2 class="text-3xl font-bold text-center mb-16">Galeri Produk & Komposisi</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="img/ecodiamonk-product.png.png" alt="Galeri Ecodiamonk 1">
+                    <img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="img/daun-kelor.jpg" alt="Daun Kelor">
+                    <img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="img/daun-sirsak.jpg" alt="Daun Sirsak">
+                    <img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="img/lo-han-kuo.jpg" alt="Buah Lo Han Kuo">
+                </div>
+            </div>
+        </section>
+
+        <section id="healing-crisis" class="py-24 bg-white">
+            <div class="container mx-auto px-6 fade-in-section">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold mb-4">Informasi Proses Detoksifikasi (Healing Crisis)</h2>
+                    <p class="text-gray-600 mb-8">Konsumsi awal dapat menimbulkan reaksi fisiologis sementara sebagai bagian dari proses adaptasi dan pembuangan toksin dari dalam tubuh. Kondisi ini normal dan akan stabil seiring waktu.</p>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-3">
+                    <div class="border rounded-lg">
+                        <button class="accordion-header w-full flex justify-between items-center p-4 font-semibold text-left">Reaksi Umum & Artinya<span class="accordion-icon transition-transform duration-300 transform">+</span></button>
+                        <div class="accordion-content hidden p-4 border-t bg-slate-50 text-gray-700"><p><strong>Pusing, Mual, Mengantuk:</strong> Indikasi proses detoksifikasi pada sistem peredaran darah.</p></div>
+                    </div>
+                    <div class="border rounded-lg">
+                         <button class="accordion-header w-full flex justify-between items-center p-4 font-semibold text-left">Gatal-gatal atau Ruam<span class="accordion-icon transition-transform duration-300 transform">+</span></button>
+                        <div class="accordion-content hidden p-4 border-t bg-slate-50 text-gray-700"><p>Indikasi pembuangan toksin melalui pori-pori kulit. Disarankan meningkatkan asupan air putih.</p></div>
+                    </div>
+                     <div class="border rounded-lg">
+                         <button class="accordion-header w-full flex justify-between items-center p-4 font-semibold text-left">Nyeri pada Bagian Tubuh Tertentu<span class="accordion-icon transition-transform duration-300 transform">+</span></button>
+                        <div class="accordion-content hidden p-4 border-t bg-slate-50 text-gray-700"><p>Indikasi bahwa senyawa aktif herbal sedang bekerja secara spesifik pada area tubuh yang bermasalah.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-slate-50">
+            <div class="container mx-auto px-6 fade-in-section">
+                <h2 class="text-3xl font-bold text-center mb-16">Data Testimoni Pengguna</h2>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div>
+                        <iframe class="w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/t50QRf4epY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center mt-4 font-semibold text-gray-700">"Diabetes Normal Setelah Konsumsi Ecodiamonk"</p>
+                    </div>
+                    <div>
+                        <iframe class="w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/zfGAjsvjww4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center mt-4 font-semibold text-gray-700">"Testimoni Badan Pegel Ecodiamonk"</p>
+                    </div>
+                    <div>
+                        <iframe class="w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/5j-SjeXkVrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center mt-4 font-semibold text-gray-700">"Stroke Sembuh 1 Minggu Setelah Konsumsi Ecodiamonk"</p>
+                    </div>
+                    <div>
+                        <iframe class="w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/hQ0BRgnW540" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center mt-4 font-semibold text-gray-700">"Asam Urat Sembuh Setelah Konsumsi Ecodiamonk"</p>
+                    </div>
+                    <div>
+                        <iframe class="w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/iEtqUzjaBDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center mt-4 font-semibold text-gray-700">"Kista Sembuh Dalam 2 Hari Setelah Konsumsi Ecodiamonk"</p>
+                    </div>
+                    <div>
+                        <iframe class="w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/Vq1GBKNUv38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center mt-4 font-semibold text-gray-700">"Ecodiamonk Jossss di Ranjang, Stamina Lelaki Perkasa"</p>
+                    </div>
+                    <div>
+                        <iframe class="w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/SbRavd5S6OY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center mt-4 font-semibold text-gray-700">"Kolesterol Turun Drastis Setelah Konsumsi Ecodiamonk"</p>
+                    </div>
+                    <div>
+                        <iframe class="w-full aspect-video rounded-lg shadow-lg" src="https://www.youtube.com/embed/Sz1Iu5DjR44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="text-center mt-4 font-semibold text-gray-700">"Testimoni Ecodiamonk Untuk Sakit Komplikasi"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-use" class="py-24 bg-white">
+            <div class="container mx-auto px-6 fade-in-section">
+                <h2 class="text-3xl font-bold text-center mb-16">Prosedur Konsumsi Standar</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-3 text-sky-700">Dosis Umum</h3>
+                        <ol class="space-y-3 list-decimal list-inside text-gray-700">
+                            <li>Siapkan ±250 ml air mineral, suhu ruang atau hangat.</li>
+                            <li>Teteskan 2-3 tetes Ecodiamonk.</li>
+                            <li><strong>Untuk Pemeliharaan Kesehatan:</strong> Konsumsi 2x sehari.</li>
+                            <li><strong>Untuk Terapi Pendamping:</strong> Konsumsi 3-4x sehari.</li>
+                        </ol>
+                    </div>
+                     <div class="bg-red-50 p-6 rounded-lg border border-red-200">
+                        <h3 class="font-bold text-xl mb-3 text-red-700">Perhatian Khusus</h3>
+                        <ul class="space-y-3 list-disc list-inside text-gray-700">
+                            <li>Bagi penderita gangguan ginjal dan jantung, disarankan memulai dengan dosis 1 tetes per hari untuk adaptasi.</li>
+                             <li>Dianjurkan untuk berdoa sesuai keyakinan masing-masing sebelum mengonsumsi.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="order" class="py-24 bg-slate-100">
+            <div class="container mx-auto px-6 text-center fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold">Ambil Langkah Pertama Anda</h2>
+                <p class="text-gray-600 mt-3 mb-8 max-w-xl mx-auto">Hubungi kami untuk informasi produk lebih lanjut, konsultasi, dan prosedur pemesanan.</p>
+                <div class="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
+                    <img src="img/PP.png" alt="Foto Badruddin Sudaryono" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-orange-300">
+                    <p class="font-semibold text-lg">Badruddin Sudaryono</p>
+                    <p class="text-sm text-gray-500">Distributor Resmi BIGPRO - ECODIAMONK</p>
+                    <p class="text-4xl font-bold text-gray-800 my-4">0852 9032 5852</p>
+                     <a href="https://wa.me/6285290325852?text=Halo,%20Bapak%20Badruddin.%20Saya%20ingin%20memesan%20Ecodiamonk." target="_blank" class="w-full inline-block bg-orange-500 text-white font-bold py-4 px-8 rounded-lg hover:bg-orange-600 transition-all duration-300 shadow-lg text-xl">
+                        Hubungi via WhatsApp
+                    </a>
+                </div>
+                <div class="mt-8 flex justify-center items-center space-x-6">
+                    <div class="text-center">
+                        <img src="img/BPOM.png" alt="Logo BPOM" class="h-12 mx-auto">
+                        <p class="text-xs text-gray-600 mt-1">TR 202601521</p>
+                    </div>
+                     <div class="text-center">
+                        <img src="img/Halal.png" alt="Logo Halal" class="h-12 mx-auto">
+                         <p class="text-xs text-gray-600 mt-1">Tersertifikasi Halal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-slate-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12">
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Ecodiamonk</h3>
+                    <p class="text-sm">Produk dari: PT. BAYU INSAN GEMILANG PROFITINDO, Semarang - Indonesia.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-2">Distributor Resmi</h4>
+                     <p class="text-sm">Badruddin Sudaryono<br>WhatsApp: <a href="https://wa.me/6285290325852" class="hover:text-white">0852 9032 5852</a></p>
+                </div>
+             </div>
+            <div class="mt-10 pt-6 border-t border-gray-700 text-center text-xs">
+                <p><strong>Disclaimer:</strong> Hasil pada setiap individu dapat bervariasi. Produk ini adalah jamu herbal yang berfungsi membantu memelihara kesehatan dan bukan pengganti obat dari dokter.</p>
+                <p class="mt-4">© 2025 Badruddin Sudaryono - Distributor Resmi Ecodiamonk.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // JavaScript tetap sama, karena fungsionalitasnya tidak berubah
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const navbar = document.getElementById('navbar');
+            const logo = document.getElementById('logo');
+            const navLinks = navbar.querySelectorAll('.nav-link');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileNavLinks = mobileMenu.querySelectorAll('.nav-link-mobile');
+            const sections = document.querySelectorAll('section');
+
+            // 1. Navbar Scroll Effect
+            const handleNavbarScroll = () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-white', 'shadow-lg', 'navbar-scrolled');
+                    navbar.classList.remove('navbar-top');
+                    logo.classList.add('text-gray-800');
+                    logo.classList.remove('text-white');
+                    navLinks.forEach(link => {
+                        link.classList.add('text-gray-800', 'hover:text-orange-600');
+                        link.classList.remove('text-white', 'hover:text-orange-300');
+                    });
+                } else {
+                    navbar.classList.remove('bg-white', 'shadow-lg', 'navbar-scrolled');
+                    navbar.classList.add('navbar-top');
+                    logo.classList.remove('text-gray-800');
+                    logo.classList.add('text-white');
+                    navLinks.forEach(link => {
+                        link.classList.remove('text-gray-800', 'hover:text-orange-600');
+                        link.classList.add('text-white', 'hover:text-orange-300');
+                    });
+                }
+            };
+            
+            // 2. Mobile Menu Logic
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+            });
+
+            // 3. Active Nav Link Highlighting
+            const highlightNavLink = () => {
+                let currentSection = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.dataset.section === currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+
+            // 4. Fade-in Animation on Scroll
+            const fadeInSections = document.querySelectorAll('.fade-in-section');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            fadeInSections.forEach(section => observer.observe(section));
+
+            // 5. Accordion Logic for Healing Crisis Section
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const accordionContent = header.nextElementSibling;
+                    const accordionIcon = header.querySelector('.accordion-icon');
+                    
+                    accordionContent.classList.toggle('hidden');
+                    if (accordionContent.classList.contains('hidden')) {
+                        accordionIcon.textContent = '+';
+                    } else {
+                        accordionIcon.textContent = '-';
+                    }
+                });
+            });
+            
+            // Add Event Listeners
+            window.addEventListener('scroll', () => {
+                handleNavbarScroll();
+                highlightNavLink();
+            });
+
+            // Initial calls
+            handleNavbarScroll();
+            highlightNavLink();
+        });
+    </script>
+</body>
+</html>
